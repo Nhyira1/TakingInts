@@ -4,16 +4,20 @@
     <body>
         <h1> Let's Compare Numbers </h1>
         <script type = "text/javascript">
+
             
-            var num1 = 5;
-            var num2 = 2;
+           //Prompting the user to take inputs 
+            var num1 = window.prompt("Enter an integer") ;
+            var num2 = window.prompt("Enter an integer");
 
-            alert('You need to enter some numbers');
 
+             //Displaying the greater number   
             if (num1 > num2){
-                document.write("<b>The fist number is greater than the second</b>")
-            } else{
-                document.write("<b>The second number is greater than the first</b>")
+                document.write("The fist number was " + num1 + "and it is greater than " + num2)
+            } else if ( num2 > num1){
+                document.write("The second number  was " + num2 + " and it  is greater than " + num1)
+            }else {
+                document.write("The numbers are equal")
             }
 
         </script>
